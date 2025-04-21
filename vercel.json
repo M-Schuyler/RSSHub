@@ -7,13 +7,12 @@
     {
       "src": "/api/vercel.ts",
       "use": "@vercel/node",
-      // --- 添加下面这个 config 对象 ---
+     
       "config": {
         "includeFiles": [
-          // 明确告诉 Vercel 包含这个依赖包所需的数据文件
+          
           "node_modules/@tonyrl/rand-user-agent/data/user-agents.json"
-          // 如果这个路径不确定或为了更保险，可以尝试包含整个 data 目录：
-          // "node_modules/@tonyrl/rand-user-agent/data/**"
+          
         ]
       }
       // --- config 对象结束 ---
