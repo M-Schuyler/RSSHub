@@ -7,15 +7,11 @@
     {
       "src": "/api/vercel.ts",
       "use": "@vercel/node",
-     
       "config": {
         "includeFiles": [
-          
-          "node_modules/@tonyrl/rand-user-agent/data/user-agents.json"
-          
+          "node_modules/@tonyrl/rand-user-agent/data/**"
         ]
       }
-
     }
   ],
   "routes": [
