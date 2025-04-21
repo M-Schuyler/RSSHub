@@ -5,14 +5,14 @@
   },
   "builds": [
     {
-      "src": "/api/vercel.ts",
+      "src": "/api/vercel.cjs",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/.*",
-      "dest": "/api/vercel.ts"
+      "dest": "/api/vercel.cjs"
     }
   ]
 }
